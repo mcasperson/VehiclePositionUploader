@@ -20,7 +20,7 @@ public class VehiclePositionScheduledUpload {
   public void reportCurrentTime() {
     LOG.info("Saving a new vehicle position");
 
-    final ResponseEntity<Void> response = WebClient.create("https://steep-pond-8195.us-east1.akkaserverless.app")
+    final ResponseEntity<Void> response = WebClient.create("https://frosty-moon-3947.us-east1.kalix.app")
         .post()
         .uri("/position")
         .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
